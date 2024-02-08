@@ -2,9 +2,11 @@ package com.motassadderoon;
 
 public class Main {
     public static void main(String[] args) {
-        TaxCalculator calculator = getTaxCalculator();
-        System.out.println("calculator.calculateTax() = " + calculator.calculateTax());
-
+        Account myAcc = new Account();
+        myAcc.deposit(10);
+        myAcc.deposit(20);
+        myAcc.withDraw(15);
+        System.out.println("myAcc.getBalance() = " + myAcc.getBalance());
     }
 
     public static TaxCalculator getTaxCalculator() {
